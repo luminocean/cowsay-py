@@ -9,13 +9,23 @@ def cowsay(str, length=40):
     return build_bubble(str, length) + build_cow()
 
 def build_cow():
-    return """
-         \   ^__^ 
-          \  (oo)\_______
-             (__)\       )\/\\
-                 ||----w |
-                 ||     ||
-    """
+    # Redraw a monkey instead of a cow :P
+    # Happy Chinese Money Year!
+    return '''
+        \\               ',
+         \\           .-`-,\\__
+          \\          ."`   `,
+           \\        .'_.  ._  `;.
+            \\   __ / `      `  `.\ .--.
+               /--,| 0)   0)     )`_.-,)
+              |    ;.-----.__ _-');   /
+               '--./         `.`/  `"`
+                  :   '`      |.
+                  | \     /  //
+                   \ '---'  /'
+                    `------' \\
+                   _/       `--...
+    '''
 
 def build_bubble(str, length=40):
     bubble = []
@@ -46,10 +56,10 @@ def get_border(lines, index):
 
     elif index == 0:
         return [ "/", "\\" ]
-    
+
     elif index == len(lines) - 1:
         return [ "\\", "/" ]
-    
+
     else:
         return [ "|", "|" ]
 
